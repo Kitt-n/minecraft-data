@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 
 import { useState } from "react";
@@ -50,11 +51,11 @@ const Navbar = () => {
 
         {/* Navbar Links */}
         <div
-          className={`w-full md:flex md:w-auto md:order-1 ${isMenuOpen ? "" : "hidden"
+          className={`w-full md:flex md:w-auto ${isMenuOpen ? "block" : "hidden"
             }`}
           id="navbar-menu"
         >
-          <ul className="flex flex-col mt-4 p-4 md:flex-row md:space-x-8 md:mt-0 md:items-center">
+          <ul className="flex flex-col mt-4 p-4 bg-white border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:items-center md:border-0 md:bg-transparent">
             <li>
               <a
                 href="#"
